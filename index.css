@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+.navbar ul{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    list-style:none;
+    font-size: 17px;
+    font-family: sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+body{
+    position: relative;
+}
+.home{
+    background-color: #423f3f;
+    height: 10vh;
+    padding: 20px 50px;
+    float: left;    
+}
+.home span{
+    font-size: 40px;
+}
+.navleft{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.navleft a{
+    text-decoration: none;
+    color:rgb(215, 138, 16);
+    font-weight: 600;
+
+
+}
+.navright{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.searchbox{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox li{
+    margin: 0px 10px;
+}
+.search{
+    border:none;
+    background-color:rgba(0, 0, 0, 0);
+    color:orange;
+    
+}
+.searchbox input{
+    border:none;
+    background-color: #423f3f;
+    font-size: 15px;
+    padding: 0px 10px;
+    font-family:sans-serif;
+    height: 30px;
+    color:orange;
+    border-radius: 45px;
+    box-shadow: rgba(255, 255, 255, 0.169) 0px 4px 12px;
+}
+.login{
+    border:none;
+    background-color: rgba(228, 137, 11, 0.902);
+    padding: 10px 50px;
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 30px 90px;
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+   
+    
+}
+.navleft a:hover,.search:hover{
+    background-color: rgba(19, 18, 18, 0);
+    color:rgb(206, 105, 17);
+}
+.login:hover{
+    background-color: rgb(28, 26, 26);
+    color:orange;
+}
+#backgroundlogin{
+    inset:0;
+    background-color: #000000b6;
+    display: flex;
+    justify-content: center;
+
+    display: none;
+    position: relative;
+    
+}
+@keyframes login {
+    from{ top:-75vh;}
+    to{top:10vh; }
+}
+.loginform{
+    width: 40vw;
+    height:70vh;
+    background-color:white;
+    border-radius: 15px;
+    animation-name:login;
+    animation-duration: .5s;
+    position: absolute;
+    top:10vh; 
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.topform{
+    width: 100%;
+}
+.topform span{
+    float: right;
+    color:rgb(200, 139, 24);
+}
+label{
+    color:rgb(188, 132, 28);
+    width: 100%;
+    margin-top: -30px;
+}
+input[type=submit],input[type=text],input[type=password]{
+    width: 100%;
+    background-color: #242323d7;
+    border:none;
+    color:rgba(255, 166, 0, 0.761);
+    height: 40px;
+    border-radius:30px;
+    margin-top: -40px;
+    padding: 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.loginform p{
+    margin-top: -30px;
+    width: 100%;
+    color:rgb(189, 132, 27);
+}
+input[type=submit]
+{
+    width: 50%;
+    background-color:rgba(255, 166, 0, 0.726);
+    color:black;
+}
+input[type=submit]:hover{
+    background-color: #423f3f;
+    color:orange;
+}
+.topform span:hover {
+    color:#423f3f;
+}

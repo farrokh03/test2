@@ -89,7 +89,7 @@ body{
 }
 .navleft a:hover,.search:hover{
     background-color: rgba(19, 18, 18, 0);
-    color:rgb(206, 105, 17);
+    color:#423f3f;
 }
 .login:hover{
     background-color: rgb(28, 26, 26);
@@ -110,7 +110,7 @@ body{
     to{top:10vh; }
 }
 .loginform{
-    width: 40vw;
+    width: 525px;
     height:70vh;
     background-color:white;
     border-radius: 15px;
@@ -128,36 +128,101 @@ body{
 .topform{
     width: 100%;
 }
+.switch{
+    width: 120px;
+    height: 40px;
+    border-radius: 35px;
+    background-color: #423f3f;
+    box-shadow: 1px 1px 4px black inset;
+    position: relative;
+    
+}
+.circle{
+    background-color: rgba(255, 166, 0, 0.843);
+    border-radius: 50%;
+    width: 35px;
+    margin: 3px;
+    height: 35px;
+    box-shadow: 1px 1px 2px black;
+    animation-name:reverseswitch;
+    animation-duration: 0.5s;
+    position: absolute;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@keyframes reverseswitch{
+    from{
+        left:80px;
+    }
+    to{
+        left:0px;
+    }
+    
+}
+@keyframes switch{
+  from{
+    left:0px;
+}
+  to{
+    left:80px;
+    
+}
+}
+.after{
+    background-color: rgba(255, 166, 0, 0.843);
+    border-radius: 50%;
+    width: 35px;
+    margin: 3px;
+    height: 35px;
+    box-shadow: 1px 1px 2px black;
+    float:right;
+    animation-name:switch;
+    animation-duration: 0.5s;
+    position: absolute;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .topform span{
     float: right;
     color:rgb(200, 139, 24);
+    font-size: 40px;
+    cursor: pointer;
 }
 label{
     color:rgb(188, 132, 28);
     width: 100%;
-    margin-top: -30px;
+    
 }
 input[type=submit],input[type=text],input[type=password]{
     width: 100%;
     background-color: #242323d7;
     border:none;
     color:rgba(255, 166, 0, 0.761);
-    height: 40px;
+    height: 8%;
     border-radius:30px;
-    margin-top: -40px;
+    
     padding: 5px 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .loginform p{
-    margin-top: -30px;
+    margin-top: -10px;
     width: 100%;
+    font-size: 13px;
     color:rgb(189, 132, 27);
 }
 input[type=submit]
 {
     width: 50%;
-    background-color:rgba(255, 166, 0, 0.726);
+    background-color:rgba(255, 166, 0, 0.822);
     color:black;
+    margin-top: 5px;
+
 }
 input[type=submit]:hover{
     background-color: #423f3f;
@@ -165,4 +230,23 @@ input[type=submit]:hover{
 }
 .topform span:hover {
     color:#423f3f;
+}
+.signform{
+    width: 525px;
+    height:70vh;
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    top:10vh; 
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.signform .loginitems{
+    display:none;
+}
+.loginform .signlabel,.loginform .signinput{
+    display: none;
 }

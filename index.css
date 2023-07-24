@@ -3,6 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
     user-select: none;
+    
+}
+body{
+    position: relative;
+    overflow-x:hidden;
 }
 .navbar ul{
     width: 100vw;
@@ -14,8 +19,76 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
 }
-body{
+.sidehome{
+    background-color: rgba(0, 0, 0, 0.507);
     position: relative;
+    height: 10vh;
+    
+}
+.sidehome span{
+    font-size: 40px;
+    position: absolute;
+    left:10px;
+    top:20px;
+    
+}
+.sidenavbar{
+    position: absolute;
+    right:-40%;
+    animation-duration: 0.5s;
+    width: 40%;
+    height: 90vh;
+    background-color: #423f3f;
+    display:none;
+    z-index: 2;
+}
+.sidesearchbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidesearchbox button{
+    width: 25%;
+}
+.sidesearchbox li{
+    width: 75%;
+    padding: 10px;
+}
+.sidesearchbox li input{
+    width: 80%;
+    height:40px;
+}
+.sidenavbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sidenavbar ul li{
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    
+    box-shadow: 0px 0px 0.75px black;
+}
+.sidenavbar ul li a{
+    color:rgba(255, 166, 0, 0.806);
+    text-decoration: none;
+}
+.sidesearchinput{
+    width: 80%;
+}
+.navbar span{
+    font-size: 40px;
+    float: right;
+    margin-top:15px;
+    margin-right:10px;
+    color:orange;
 }
 .home{
     background-color: #423f3f;
@@ -25,6 +98,7 @@ body{
 }
 .home span{
     font-size: 40px;
+    color: orange;
 }
 .navleft{
     width: 50vw;
@@ -57,15 +131,26 @@ body{
 .searchbox li{
     margin: 0px 10px;
 }
-.search{
+.sidesearch{
     border:none;
-    background-color:rgba(0, 0, 0, 0);
+    background-color:#423f3f;
     color:orange;
     
 }
+#burgermenu{
+    display: none;
+}
+.search{
+    border:none;
+    background-color:rgba(245, 245, 245, 0);
+}
+.search span{
+    font-size: 30px;
+    color:orange;
+}
 .searchbox input{
     border:none;
-    background-color: #423f3f;
+    
     font-size: 15px;
     padding: 0px 10px;
     font-family:sans-serif;
@@ -110,6 +195,7 @@ body{
     to{top:10vh; }
 }
 .loginform{
+    z-index: 10;
     width: 525px;
     height:70vh;
     background-color:white;
@@ -232,6 +318,7 @@ input[type=submit]:hover{
     color:#423f3f;
 }
 .signform{
+    z-index: 10;
     width: 525px;
     height:70vh;
     background-color:white;
@@ -249,4 +336,12 @@ input[type=submit]:hover{
 }
 .loginform .signlabel,.loginform .signinput{
     display: none;
+}
+@keyframes opensidemenu{
+    from{right:-40%}
+    to{right:0}    
+}
+@keyframes closesidemenu{
+    from{right:0}
+    to{right:-40%}
 }

@@ -2,6 +2,7 @@
 
 <html>
     <head>
+            <title>free lanceri</title>
             <link rel="stylesheet" href="index.css">
             <link rel="stylesheet" href="indexresponsive.css">
             <link rel="stylesheet" href="index.js">
@@ -10,7 +11,7 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
-        <section>
+        <section style="position: relative; width: 100%;">
             <div class="navbar">
                 <ul>
                     <div class="navleft">
@@ -27,6 +28,26 @@
                             <li><button onclick="document.getElementById('backgroundlogin').style.display='flex';"class="login">login</button></li>
                         </div>
                     </div>
+                </ul>
+                <span id="burgermenu" class="material-symbols-outlined">menu_open</span>
+            </div>
+
+            <div class="sidenavbar" id="sidebar">
+                <ul>
+                       
+                       <li class="sidehome"><a href=""><span class="material-symbols-outlined">home</span>home</a></li>
+                       <li><a href="">Work samples</a></li>
+                       <li><a href="">Cooperation Request</a></li>
+                
+                    
+                        <div class="sidesearchbox">
+                            <button class="sidesearch"><span id="close" class="material-symbols-outlined">search</span></button>
+                            <li><input class="sidesearchinput" type="text" required placeholder="Search..."></li>
+                        </div>
+                        <div class="log">
+                            <li><button onclick="document.getElementById('backgroundlogin').style.display='flex';"class="login">login</button></li>
+                        </div>
+        
                 </ul>
             </div>
         </section>

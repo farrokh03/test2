@@ -1,0 +1,17 @@
+@media only screen and (max-width: 992px )
+{
+   .mid{
+    display: none;
+   }
+   .responsivemid{
+    display:flex;
+    width: 80VW;
+    height: 100VH;
+   }
+   .doublearrow{
+    display: flex;
+   }
+   .arrows{
+    display: none;
+   }
+}

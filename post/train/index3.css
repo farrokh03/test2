@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+.mid{
+    width: 80vw; 
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; position:
+    relative;
+}
+.right{
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsivemid{
+    width: 80vw; 
+    height: 100vh;
+    justify-content:space-around;
+    align-items: center; 
+    position:relative;
+    display:none;
+    overflow-x: hidden;
+}
+.box{
+    border-radius:5px;
+    position: absolute;
+    left: 12.5%;
+    width: 75%;
+    height: 80%;
+    background-color: #343232;
+    animation-duration: 1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 5;
+}
+.box1{
+    
+    border-radius:5px;
+    animation-duration:1s;
+    position: absolute;
+    left:3.75%;
+    width:25%;
+    height: 50%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius:10px;
+    animation-duration:1s;
+    left:32.5%;
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box3{
+    border-radius:10px;
+    animation-duration:1s;
+    position: absolute;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    left:71.25%;
+    width: 25%;
+    height: 50%;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box4{
+    border-radius:5px;
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    z-index: -5;
+    background-image: url(/photos/10259340_4401280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:#343232;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    animation-duration: 1S;
+}
+.form{
+    width: 100%;
+    height: 35%;
+}
+.form input{
+    font-family: sans-serif;
+    border: none;
+    width: 80%;
+    height: 10%;
+    user-select: none;
+    padding: 5px 20px;
+    
+}
+.form label span{
+    font-size: 100%;
+}
+.photo{
+    width: 100%;
+    height: 65%;
+    border-radius:5px 5px 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/photos/8672698_3964906.jpg);
+    
+}
+
+    
+@keyframes animationone{
+    0%{
+        width: 25%;
+        height:50%;
+        left:3.75%;
+        z-index: 0;
+    }
+    100%{
+        width: 35%;
+        height: 80%;
+        left:32.5%;
+        z-index: 100;
+    }
+}
+@keyframes animationtwo{
+    from{
+        width: 35%;
+        height: 80%;
+        left:32.5%;
+    }
+    to{
+        width: 25%;
+        height:50%;
+        left:71.25%;
+    }
+}
+@keyframes animationthree{
+    0%{
+        width: 25%;
+        height:50%;
+        left:71.25%;
+    }
+    50%{
+        width: 0;
+        height:0;
+        left:100%;
+        
+    }
+    50.0000000001%{
+        left:0;
+    }
+    100%{
+        width: 25%;
+        height:50%;
+        left:3.75%;
+    }
+}
+
+@keyframes reverseanimationone{
+    0%{
+        width: 25%;
+        height:50%;
+        left:3.75%;
+    }
+    50%{
+        width: 0;
+        height:0;
+        left:0;
+    }
+    50.0000000001%{
+        left:100%;
+    }
+    100%{
+        width: 25%;
+        height:50%;
+        left:71.25%;
+    }
+}
+@keyframes reverseanimationtwo{
+    from{
+        width: 35%;
+        height: 80%;
+        left:32.5%;
+    }
+    to{
+        width: 25%;
+        height:50%;
+        left:3.75%;
+    }
+}
+@keyframes reverseanimationthree{
+   0%{
+        height: 50%;
+        width: 25%;
+        left:71.25%;
+        z-index: 0;
+   }
+   100%{
+    height: 80%;
+    width: 35%;
+    left:32.5%;
+    z-index: 100;
+   }
+}
+@keyframes responsiveswitchleft{
+    0%{
+        width: 60%;
+        height: 60%;
+        left:20%;
+        z-index: -5;
+        
+    }
+    50%{
+        width:67.5%;
+        height: 70%;
+        left:-67.5%;
+        z-index: 0;
+        
+    }
+    100%{
+        width: 75%;
+        height: 80%;
+        left: 12.5%;
+        z-index: 5;
+        
+    }
+}
+@keyframes responsiveswitchright{
+    0%{
+        width: 75%;
+        height: 80%;
+        left:12,5%;
+        z-index: 5;
+    }
+    50%{
+        width:67.5%;
+        height: 70%;
+        left:100%;
+        z-index: 0;
+    }
+    100%{
+        width: 60%;
+        height: 60%;
+        left: 20%;
+        z-index: -5;
+    }
+}
+@keyframes reverseresponsiveswitchright{
+0%{
+    width: 60%;
+    height: 60%;
+    left:20%;
+    z-index: -5;
+}
+50%{
+    width: 67.5%;
+    height: 70%;
+    left:100%;
+    z-index: 0;
+}
+100%{
+    width: 75%;
+    height: 80%;
+    left:12.5%;
+    z-index: 5;
+}
+}
+@keyframes reverseresponsiveswitchleft{
+    0%{
+        width: 75%;
+        height: 80%;
+        left:12.5%;
+        z-index: 5;
+    }
+    50%{
+        width: 67.5%;
+        height: 70%;
+        left:-67.5%;
+        z-index: 0;
+    }
+    100%{
+        width: 60%;
+        height: 60%;
+        left:20%;   
+        z-index: -5;
+    }
+    
+}
+.arrows{
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    z-index: 10;
+    user-select: none;
+    cursor: pointer;
+
+}
+.doublearrow{
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-size: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.arrows:hover{
+    background-color: #343232;
+    color:rgba(255, 166, 0, 0.801);
+}

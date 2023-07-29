@@ -4,6 +4,25 @@ let leftarrow = document.getElementById('left');
 let leftdoublearrow = document.getElementById('leftres');
 let rightdoublearrow = document.getElementById('rightres');
 
+let turnon1 = document.getElementById('turnon1');
+let turnoff1 = document.getElementById('turnoff1');
+
+let turnon2 = document.getElementById('turnon2');
+let turnoff2 = document.getElementById('turnoff2');
+
+let turnon3 = document.getElementById('turnon3');
+let turnoff3 = document.getElementById('turnoff3');
+
+turnon2.onclick= turn2;
+turnoff2.onclick = off2;
+
+turnon1.onclick= turn1;
+turnoff1.onclick = off1;
+
+turnon3.onclick= turn3;
+turnoff3.onclick = off3;
+
+
 rightarrow.onclick = rightside;
 leftarrow.onclick = leftside;
 
@@ -27,11 +46,16 @@ function leftside(){
         secondbox.style.width='25%';
         secondbox.style.height='50%';
         secondbox.style.left='3.75%';
+        secondbox.style.filter='blur(3px)';
+      
+
 
         thirdbox.style.animationName= 'reverseanimationthree';
         thirdbox.style.width='35%';
         thirdbox.style.height='80%';
         thirdbox.style.left='32.5%';
+        thirdbox.style.filter='none';
+
 
         firstbox.id='three';
         secondbox.id ='one';
@@ -52,11 +76,15 @@ function rightside(){
     firstbox.style.width ='35%';
     firstbox.style.height = '80%';
     firstbox.style.left ='32.5%';
+    firstbox.style.filter='none';
+    
 
     secondbox.style.animationName ='animationtwo';
     secondbox.style.width='25%';
     secondbox.style.height='50%';
     secondbox.style.left= '71.25%';
+    secondbox.style.filter='blur(3px)';
+   
 
     thirdbox.style.animationName = 'animationthree';
     thirdbox.style.left='3.75%';
@@ -108,4 +136,35 @@ function responleftside()
 
     box.id ='sec';
     box4.id ='solo';
+}
+function turn2(){
+    document.getElementById('up2').style.display='block';
+    document.getElementById('up2').style.animationName='up';
+}
+
+function off2(){
+    document.getElementById('up2').style.display='none';
+
+}
+
+
+function turn3(){
+    document.getElementById('up3').style.display='block';
+    document.getElementById('up3').style.animationName='up';
+}
+
+function off3(){
+    document.getElementById('up3').style.display='none';
+
+}
+
+
+function turn1(){
+    document.getElementById('up1').style.display='block';
+    document.getElementById('up1').style.animationName='up';
+}
+
+function off1(){
+    document.getElementById('up1').style.display='none';
+
 }

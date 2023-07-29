@@ -138,7 +138,7 @@ function responleftside()
     box4.id ='solo';
 }
 function turn2(){
-    document.getElementById('up2').style.display='block';
+    document.getElementById('up2').style.display='flex';
     document.getElementById('up2').style.animationName='up';
 }
 
@@ -149,7 +149,7 @@ function off2(){
 
 
 function turn3(){
-    document.getElementById('up3').style.display='block';
+    document.getElementById('up3').style.display='flex';
     document.getElementById('up3').style.animationName='up';
 }
 
@@ -160,7 +160,7 @@ function off3(){
 
 
 function turn1(){
-    document.getElementById('up1').style.display='block';
+    document.getElementById('up1').style.display='flex';
     document.getElementById('up1').style.animationName='up';
 }
 

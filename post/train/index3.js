@@ -13,6 +13,15 @@ let turnoff2 = document.getElementById('turnoff2');
 let turnon3 = document.getElementById('turnon3');
 let turnoff3 = document.getElementById('turnoff3');
 
+let turnon = document.getElementById('turnon');
+let turnoff = document.getElementById('turnoff');
+
+let turnon4 = document.getElementById('turnon4');
+let turnoff4 = document.getElementById('turnoff4');
+
+turnon.onclick= turn;
+turnoff.onclick = off;
+
 turnon2.onclick= turn2;
 turnoff2.onclick = off2;
 
@@ -22,6 +31,8 @@ turnoff1.onclick = off1;
 turnon3.onclick= turn3;
 turnoff3.onclick = off3;
 
+turnon4.onclick= turn4;
+turnoff4.onclick = off4;
 
 rightarrow.onclick = rightside;
 leftarrow.onclick = leftside;
@@ -137,6 +148,15 @@ function responleftside()
     box.id ='sec';
     box4.id ='solo';
 }
+function turn(){
+    document.getElementById('up').style.display='flex';
+    document.getElementById('up').style.animationName='up';
+}
+
+function off(){
+    document.getElementById('up').style.display='none';
+
+}
 function turn2(){
     document.getElementById('up2').style.display='flex';
     document.getElementById('up2').style.animationName='up';
@@ -158,6 +178,16 @@ function off3(){
 
 }
 
+function turn4(){
+    document.getElementById('up4').style.display='flex';
+    document.getElementById('up4').style.animationName='up';
+}
+
+function off4(){
+    document.getElementById('up4').style.display='none';
+
+}
+
 
 function turn1(){
     document.getElementById('up1').style.display='flex';
@@ -168,3 +198,41 @@ function off1(){
     document.getElementById('up1').style.display='none';
 
 }
+let ball= document.getElementById('ball');
+let icon= document.getElementById('icon');
+let menuicon= document.getElementById('menu');
+
+let navbot = document.getElementById('navbot');
+
+ball.onclick = switchtheme;
+
+menuicon.onclick = showmenu;
+function switchtheme(){
+
+    if(icon.innerHTML=="dark_mode")
+    {
+        ball.style.left='3px';
+        icon.innerHTML='light_mode';
+        ball.style.animationName='reverseball';
+        document.getElementById('body').style.backgroundColor='white';
+    }
+    else
+    {
+        ball.style.left='75px';
+         icon.innerHTML='dark_mode';
+         ball.style.animationName='ball';
+         document.getElementById('body').style.backgroundColor='#323232';
+    }
+}  
+function showmenu(){
+
+    if(navbot.style.top=="-24vh")
+    {
+        navbot.style.animationName='showmenu';
+        navbot.style.top='10vh';
+    }
+    else{
+        navbot.style.animation='hidemenu';
+        navbot.style.top='-24vh';
+    }
+}      

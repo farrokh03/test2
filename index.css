@@ -16,7 +16,7 @@ body{
     list-style:none;
     font-size: 17px;
     font-family: sans-serif;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
 }
 .sidehome{
@@ -357,7 +357,7 @@ input[type=submit]:hover{
     from{right:0}
     to{right:-40%}
 }
-
+content
 /*body of page */
 .box{
     
@@ -366,18 +366,7 @@ input[type=submit]:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.lane{
-    width: 100%;
-    margin-top: 100px;
-    border-left: 10px solid rgb(4, 183, 243);
-    padding-left:100px;
-    height: 10vh;
-   
-    display: flex;
-    align-items: center;
-    background-color: #423f3f;
-}
-.leftbox_one ,.rightbox_one{
+.rightbox_one{
     width: 50vw;
     height: 90vh;
     display: flex;
@@ -387,11 +376,15 @@ input[type=submit]:hover{
 .leftbox_one{
     
     flex-direction: column;
-    
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-items: center;
 }
 .background{
-    width: 80%;
+    width: 90%;
     height: 70%;
     padding: 30px;
     background-color:rgba(2, 255, 158, 0.331);
@@ -489,9 +482,10 @@ input[type=submit]:hover{
     color:rgb(21, 21, 69);
 }
 */
+leftbox_one
 .content{
     
-    width: 60%;
+    width: 80%;
     height: 70%;
     background-color: white;
     border-radius: 20px;
@@ -544,7 +538,7 @@ input[type=submit]:hover{
 .roll-in-left {
 	-webkit-animation: roll-in-left 0.6s ease-out both;
 	        animation: roll-in-left 0.6s ease-out both;
-            animation-iteration-count: infinite;
+            animation-iteration-count:1;
 }
  @-webkit-keyframes roll-in-left {
     0% {

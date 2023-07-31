@@ -115,12 +115,14 @@ function responrightside()
     box.style.left='20%';
     box.style.zIndex='-5';
     box.style.height='60%';
+    box.style.filter='blur(3px)';
     box4.style.animationName='responsiveswitchleft';
 
     box4.style.width='75%';
     box4.style.left = '12.5%';
     box4.style.zIndex= '5';
     box4.style.height= '80%';
+    box4.style.filter='blur(0px)';
 
     box.id ='sec';
     box4.id ='solo';
@@ -135,6 +137,7 @@ function responleftside()
     var box4 = document.getElementById('sec');
     box.style.animationName='reverseresponsiveswitchleft';
     box4.style.animationName='reverseresponsiveswitchright';
+    box.style.filter='blur(3px)';
     box.style.width ='60%';
     box.style.left='20%';
     box.style.zIndex='-5';
@@ -144,6 +147,7 @@ function responleftside()
     box4.style.left = '12.5%';
     box4.style.zIndex= '5';
     box4.style.height= '80%';
+    box4.style.filter='blur(0px)';
 
     box.id ='sec';
     box4.id ='solo';
@@ -230,9 +234,11 @@ function showmenu(){
     {
         navbot.style.animationName='showmenu';
         navbot.style.top='10vh';
+        document.getElementById('nav').style.height='34vh';
     }
     else{
         navbot.style.animation='hidemenu';
         navbot.style.top='-24vh';
+        document.getElementById('nav').style.height='10vh';
     }
 }      

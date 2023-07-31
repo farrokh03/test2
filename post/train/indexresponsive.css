@@ -45,5 +45,9 @@
   #menubutton{
       display: flex;
       cursor: pointer;
+      user-select:none;
+  }
+  #menubutton:hover{
+    color:rgb(55, 53, 53);
   }
 }

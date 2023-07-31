@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    user-select: none;
     
 }
 body{
@@ -98,6 +99,7 @@ body{
     background-color:#343232;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     animation-duration: 1S;
+    filter: blur(3PX);
 }
 .form{
     font-size: inherit;
@@ -168,6 +170,9 @@ body{
     display: none;
     justify-content: center;
     align-items: center;
+}
+.information p{
+    color:#00000073;
 }
 .box1 .information{
     background: rgb(131,58,180);
@@ -351,6 +356,7 @@ body{
         height: 60%;
         left:20%;
         z-index: -5;
+        filter: blur(3px);
         
     }
     50%{
@@ -358,13 +364,14 @@ body{
         height: 70%;
         left:-67.5%;
         z-index: 0;
-        
+        filter: blur(3px);
     }
     100%{
         width: 75%;
         height: 80%;
         left: 12.5%;
         z-index: 5;
+        filter: blur(0px);
         
     }
 }
@@ -374,18 +381,23 @@ body{
         height: 80%;
         left:12,5%;
         z-index: 5;
+        filter: blur(0px);
     }
     50%{
         width:67.5%;
         height: 70%;
         left:100%;
         z-index: 0;
+        filter: blur(3px);
+
     }
     100%{
         width: 60%;
         height: 60%;
         left: 20%;
         z-index: -5;
+        filter: blur(3px);
+
     }
 }
 @keyframes reverseresponsiveswitchright{
@@ -394,18 +406,21 @@ body{
     height: 60%;
     left:20%;
     z-index: -5;
+    filter: blur(3px);
 }
 50%{
     width: 67.5%;
     height: 70%;
     left:100%;
     z-index: 0;
+    filter: blur(3px);
 }
 100%{
     width: 75%;
     height: 80%;
     left:12.5%;
     z-index: 5;
+    filter: blur(0px);
 }
 }
 @keyframes reverseresponsiveswitchleft{
@@ -414,18 +429,21 @@ body{
         height: 80%;
         left:12.5%;
         z-index: 5;
+        filter:blur(0px);
     }
     50%{
         width: 67.5%;
         height: 70%;
         left:-67.5%;
         z-index: 0;
+        filter: blur(3px);
     }
     100%{
         width: 60%;
         height: 60%;
         left:20%;   
         z-index: -5;
+        filter:blur(3px);
     }
     
 }
@@ -455,6 +473,10 @@ body{
     font-size: 40px;
     user-select: none;
     cursor: pointer;
+}
+.doublearrow:hover{
+    background-color: #343232;
+    color:rgba(255, 166, 0, 0.881);
 }
 
 .arrows:hover{
@@ -508,6 +530,14 @@ body{
     }
     to{
         top: 10vh;
+    }
+}
+@keyframes hidemenu{
+    from{
+        top:10vh;
+    }
+    to{
+        top:-24vh;
     }
 }
 li input{

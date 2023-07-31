@@ -218,14 +218,14 @@ function switchtheme(){
         ball.style.left='3px';
         icon.innerHTML='light_mode';
         ball.style.animationName='reverseball';
-        document.getElementById('body').style.backgroundColor='white';
+        
     }
     else
     {
         ball.style.left='75px';
          icon.innerHTML='dark_mode';
          ball.style.animationName='ball';
-         document.getElementById('body').style.backgroundColor='#323232';
+         
     }
 }  
 function showmenu(){

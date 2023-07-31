@@ -45,7 +45,7 @@ body{
     overflow-x: hidden;
 }
 .box{
-    border-radius:5px;
+    border-radius:10px;
     position: absolute;
     left: 12.5%;
     width: 75%;
@@ -91,7 +91,7 @@ body{
 }
 .box4{
     position: absolute;
-    border-radius:5px;
+    border-radius:10px;
     width: 60%;
     height: 60%;
     left: 20%;
@@ -124,16 +124,12 @@ body{
     margin-top: 10px;
     font-size: 13px;
 }
-.box2 .form #turnon2{
-    margin-top: 10px;
-}
+
 .box1 .form span{
     margin-top: 10px; 
     font-size: 13px;
 }
-.box1 .form #turnon1{
-    margin-top: 10px;
-}
+
 .box1 .form{
     padding: 5px;
     font-size: 13px;
@@ -143,9 +139,7 @@ body{
     margin-top: 10px;
     font-size: 13px;
 }
-.box3 .form #turnon3{
-    margin-top: 10px;
-}
+
 .box3 .form{
     padding: 5px;
     font-size: 13px;
@@ -160,7 +154,7 @@ body{
     color:rgb(0, 0, 0);
     font-size: 17;
     animation-duration: 0.75s;
-    border:3px solid #343232;
+    
     background: rgb(236,103,161);
     background: linear-gradient(180deg, rgba(236,103,161,1) 0%, rgba(28,113,213,1) 100%);
     position: absolute;

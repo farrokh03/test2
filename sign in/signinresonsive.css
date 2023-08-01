@@ -4,6 +4,17 @@
         width: 85%;
     }
 }
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(236,103,161);
+    background: linear-gradient(270deg, rgba(236,103,161,1) 0%, rgba(28,113,213,1) 100%);
+}
 @media only screen and (max-width:992px)
 {
     .container{

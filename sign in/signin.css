@@ -3,6 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(236,103,161);
+    background: linear-gradient(270deg, rgba(236,103,161,1) 0%, rgba(28,113,213,1) 100%);
+}
 body{
     display: flex;
     justify-content: center ;
@@ -74,7 +85,7 @@ body{
     font-family: sans-serif;
     margin-top: 30px;
 }
-form input[type=text]{
+form input[type=text],input[type=password], input[type=email]{
     width: 70%;
     z-index: 50;
     padding: 10px 20px;
@@ -92,7 +103,7 @@ form label{
     color:rgb(49, 47, 47);
     margin-top: 20px;
 }
-input[type=submit]{
+button{
     width: 40%;
     z-index: 50;
     margin-top: 20px;
@@ -105,11 +116,17 @@ input[type=submit]{
     
     
 }
-input[type=submit]:hover{
+button:hover{
     background: #555;
     color:#ffffff;
 }
 input[type=text]:focus{
+    border-bottom: 1px solid rgb(47, 46, 46);
+}
+input[type=password]:focus{
+    border-bottom: 1px solid rgb(47, 46, 46);
+}
+input[type=email]:focus{
     border-bottom: 1px solid rgb(47, 46, 46);
 }
 .tracking-in-expand {

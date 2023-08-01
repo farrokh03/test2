@@ -35,16 +35,16 @@
     .container{
         width: 100%;
         flex-direction: column;
-        height: 200vh;
+        height: 250vh;
     }
     .left{
         width: 90%;
-        height: 100vh;
+        height: 125vh;
         order: 2;
     }
     .right{
         width: 90%;
-        height: 100vh;
+        height: 125vh;
         order: 1;
     }
 }

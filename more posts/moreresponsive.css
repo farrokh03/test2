@@ -1,0 +1,76 @@
+@media only screen and (max-width:992px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    .top{
+        display: none;
+    }
+    .navbar{
+        
+        height: 48vh;
+    }
+    .navbar ul{
+        height: 48vh;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        width: 100%;
+        z-index: 100;
+    }
+    .container{
+        height: 200%;
+
+    }
+    .post{
+        margin-top: 10vh;
+        height:90%;
+        position: relative;
+    }
+    .information{
+        height:50%;
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .photo{
+        width: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50%;
+    }
+    .items{
+        position: absolute;
+        height:100%;
+        right: 0px;
+    }
+    .information p{
+        margin:5px;
+    }
+    .squre{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    .information p{
+        font-size: 12px;
+    }
+    .container{
+        height: 180vh;
+    }
+    .post{
+        height: 170vh;
+    }
+    .infobox{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .squre{
+        width: 100%;
+    }
+}
+ 

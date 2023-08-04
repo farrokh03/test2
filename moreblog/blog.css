@@ -7,15 +7,25 @@
     width: 100vw;
     height: 3vh;
 }
+.top i{
+    display: none;
+}
+body{
+    overflow-x:hidden;
+    position: relative;
+}
 .navbar{
     width: 100%;
     height: 6vh;
     background-color: #222;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.703);
-
+    z-index: 1;
+    transition: 1s;
+    top:3vh;
     
 }
 .navbar ul{
+    z-index: 1;
     display: flex;
     list-style: none;
     width: 100%;
@@ -23,6 +33,7 @@
     transition: .75s;
 }
 .navbar ul li{
+    z-index: 1;
     width: 12.5%;
     height: 6vh;
     display: flex;
@@ -50,6 +61,7 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
 .dropdown:hover .dropdown_content{
     display: block;
 }
+
 .dropdown_content{
     height: 700%;
     position: absolute;
@@ -60,7 +72,7 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     flex-direction: column;
     display:none;
     background-color: #222;
-    z-index: 30;
+    z-index: 1;
     box-shadow: 0px 20px 40px 0px #222;
 }
 .dropdown_content div{
@@ -71,7 +83,8 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     justify-content: center;
     align-items: center;
     transition: .25s;
-    z-index: 30;
+    z-index: 1;
+    z-index: 1;
 }
 .dropdown_content:hover > #dropblur{
     filter: blur(3px);
@@ -87,24 +100,81 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
 .container{
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
-    height:80vh;
-    align-items: center;
+    height:80%;
+    margin-top: 5vh;
+    align-content: flex-start;
+    align-items:flex-start;
     overflow-y: scroll;
 }
-.container::-webkit-scrollbar-thumb{
-    width: 10px;
-    color:black;
-}
-
-
+::-webkit-scrollbar{
+    width:10px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color:#403e3e;
+  }
+::-webkit-scrollbar-track{
+   background-color: #fffefec8;
+  }
+  ::-webkit-scrollbar-button{
+    display: none;
+  }
 .box{
-    margin: 30px 15px;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/photos/Jowhareh_galleries_6_poster_3b11a1a5-34ac-435d-83be-cc7e505e1aa5.jpeg);
+    margin: 50px 20px;
     width: 300px;
-    height: 45%;
+    height: 400px;
+    animation-duration: 0.5s;
     box-shadow: 0px 20px 30px rgba(49, 48, 48, 0.542);
+    position: relative;
+}
+.buttons{
+    display: none;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    
+    background-color: #222;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 10;
+    flex-direction:row;
+    transition: 1s;
+}
+.box p{
+    width: 100%;
+    padding: 10px 0;
+    color:#f2f2f2;
+    background-color: #e0dada64;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 5px 5px black;
+}
+.squre{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:#f2f2f2;
+    width: 25%;
+    height: 100%;
+    transition: .5s;
+}
+.squre:hover{
+    background-color: #f2f2f2;
+    color:#222;
 }
 .prevnext button{
     border: none;
@@ -130,4 +200,60 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     justify-content: center;
     align-items: center;
 
+}
+@keyframes changesize{
+    from{
+        width: 300px;
+        height: 400px;
+    }
+    to{
+        width: 305px;
+        height: 410px;
+    }
+}
+@keyframes reversechangesize{
+    from{
+        width: 305px;
+        height: 410px;
+    }
+    to{
+        width: 300px;
+        height: 400px;
+    }
+}
+ @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  .tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }

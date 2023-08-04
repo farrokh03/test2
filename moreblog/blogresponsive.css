@@ -1,0 +1,49 @@
+@media only screen and (max-width:750px)
+{
+    .top{
+        z-index: 2;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 0 40px;
+    }
+    .top i{
+        display: block;
+        font-size: 30px;
+    }
+    .dropdown_content{
+        z-index: 0;
+    }
+    .navbar{
+        z-index: 0;
+        display: none;
+        transition: 1s;
+        height: 36vh;
+        width: 100%;
+        display:flex;
+        position: absolute;
+        top:8vh;
+        flex-direction: column;
+        background-color: #222;
+        flex-wrap: wrap;
+    }
+    .container{
+        z-index:-1;
+    }
+    .box{
+        z-index: -1;
+    }
+    .navbar ul li{
+        z-index: 0;
+        width: 100vw;
+    }
+    .navbar ul{
+        z-index: 0;
+        width: 100%;
+        height: 36vh;
+        background-color: #222;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

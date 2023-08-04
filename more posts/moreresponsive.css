@@ -4,12 +4,13 @@
         overflow-x: hidden;
     }
     .container{
-        height: 90vh;
+        height: 120vh;
 
     }
     .post{
         margin-top: 5vh;
-        height:70vh;
+        height:100vh;
+        width: 60%;
     }
     .information{
         height:45%;
@@ -46,10 +47,11 @@
         font-size: 12px;
     }
     .container{
-        height: 180vh;
+        height: 120vh;
     }
     .post{
-        height: 170vh;
+        height: 100vh;
+        width: 80%;
     }
     .infobox{
         font-size: 10px;

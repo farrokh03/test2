@@ -3,54 +3,40 @@
     body{
         overflow-x: hidden;
     }
-    .top{
-        display: none;
-    }
-    .navbar{
-        
-        height: 48vh;
-    }
-    .navbar ul{
-        height: 48vh;
-        flex-wrap: wrap;
-    }
-    .navbar ul li{
-        width: 100%;
-        z-index: 100;
-    }
     .container{
-        height: 200%;
+        height: 90vh;
 
     }
     .post{
-        margin-top: 10vh;
-        height:90%;
-        position: relative;
+        margin-top: 5vh;
+        height:70vh;
     }
     .information{
-        height:50%;
-        width: 90%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        height:45%;
+        width: 100%;
     }
     .photo{
-        width: 90%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 50%;
+        width: 100%;
+        height: 45%;
+    }
+    .footer{
+        height: 30vh;
+        margin-bottom: 50px;
     }
     .items{
-        position: absolute;
-        height:100%;
-        right: 0px;
+        height:10%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
     .information p{
         margin:5px;
     }
     .squre{
         padding: 10px;
+        width: 25%;
+        height: 100%;
         font-size: 20px;
     }
 }

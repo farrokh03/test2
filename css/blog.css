@@ -5,7 +5,6 @@
 }
 .top{
     width: 100vw;
-    height: 3vh;
     background-color: #ffffff;
 }
 .top i{
@@ -18,31 +17,188 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+   
 }
-.navbar{
+.navigationbar{
     width: 100%;
-    height: 6vh;
-    background-color: #222;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.703);
+    height: 10vh;
+}
+.navigationbar ul{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style:none;
+}
+.navleft , .navright{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+}
+.navleft li , .navright li{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navleft li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color:hsl(180, 100%, 64%);
+    font-weight: 550;
+    padding:32px;
+    transition: border-bottom;
+    transition: ease-in;
+    transition: .15s;
+}
+.navleft li a:hover{
+    color:rgb(82, 243, 255);
+    border-bottom: 5px solid #76ffff;
+}
+#menubutton span{
+    font-size: 45px;
+    color:rgb(93, 93, 232)
+    
+}
+#menubutton{
+   display: none;
+}
+li input{
+    border-radius: 35px;
+    border: none;
+    width: 70%;
+    padding: 10px 15px;
+    background-color: #f2f2f2;
+    color:#222;
+    font-family: sans-serif;
+    font-weight: 550;
+    outline:none;
+    
+}
+li button{
+    cursor: pointer;
+    border: none;
+    background-color: #65f2ffeb;
+    padding:10px 35px;
+    color:#2f2e2e;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-right: -30px;
+    box-shadow: 0px 3px 10px ;
+}
+li button:hover{
+    padding: 11px 38px;
+   color: #f1f1f1;
+   background-color:#222;
+   font-weight: 600;
+}
+#search{
+    font-size: 30px;
+    color:#222;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#search:hover{
+    color:#403e3e;
+    font-size: 45px;
+    font-weight: 600;
+}
+.themebutton{
+    width: 120px;
+    height:40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.themebutton i{
+    color:rgb(182, 185, 199);
+}
+.backgroundbutton{
+
+    background-color: #2e2d2d;
+    width: 116px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    height: 38px;
+    border-radius: 35px;
+    margin: 2px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0) inset;
+    
+
+}
+.ball{
+    position: absolute;
+    width: 37px;
+    z-index: 5;
+    animation-duration: 0.5s;
+    height: 34px;
+    background:rgba(51, 48, 48, 0.978);
+    border-radius: 50%;
+    left: 3px;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.ball i{
+    color:#cab11f;
+}
+@keyframes ball{
+    from{
+        left:3px;
+    }
+    to{
+        left:75px;
+    }
+}
+@keyframes reverseball{
+    from{
+        left:75px;
+    }
+    to{
+        left:3px;
+    }
+}
+
+
+
+
+
+
+.navbar{
+    width: 15%;
+    height: 80vh;
+    background-color: #222222c4;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.703);
     transition: 1s;
 }
 .navbar ul{
     display: flex;
     list-style: none;
+    flex-direction: column;
     width: 100%;
-    height: 6vh;
+    height:100%;
     transition: .75s;
+    padding: 50px 0;
 }
 .navbar ul li{
-    width: 12.5%;
-    height: 6vh;
+    width: 100%;
+    height:7%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     font-size: 17;
     transition: 0.25s;
+    z-index: 1;
     color:rgba(255, 255, 255, 0.595);
 }
 ul:hover > #blur{
@@ -53,8 +209,7 @@ ul > #blur:hover {
     color:#222;
     filter: blur(0px);
     text-shadow:none;
-    background: rgb(131,58,180);
-background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-color: #f2f2f2;
 }
 .dropdown{
     position: relative;
@@ -72,9 +227,9 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     flex-wrap: wrap;
     flex-direction: column;
     display:none;
-    background-color: #222;
+    background-color: #22222283;
     z-index: 20;
-    box-shadow: 0px 20px 40px 0px #222;
+    
 }
 .dropdown_content div{
     width: 100%;
@@ -93,20 +248,19 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     color:#222;
     filter: blur(0px);
     text-shadow:none;
-    background: rgb(131,58,180);
-background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-color: #f2f2f2;
 }
 .container{
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
-    height:75%;
-    margin-top: 6vh;
+    height:80vh;;
     align-content: flex-start;
     align-items:flex-start;
     overflow-y: scroll;
+    background-color: #f2f2f2fb;
 }
 ::-webkit-scrollbar{
     width:10px;
@@ -124,6 +278,7 @@ background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%
     margin: 70px 20px;
     width: 300px;
     height: 400px;
+    background: rgb(235, 233, 233);
     border-radius: 5px 5px 0px 0px ;
     animation-duration: 0.5s;
     box-shadow: 0px 20px 60px rgba(49, 48, 48, 0.944);
@@ -213,8 +368,6 @@ img:hover{
 .prevnext{
     width: 100%;
     height: 5vh;
-    position: absolute;
-    bottom: 3vh;
     background-color:#222;
     display: flex;
     justify-content: center;

@@ -316,6 +316,7 @@ ul > #blur:hover {
     flex-direction: column;
     display:none;
     z-index: 20;
+    overflow-y: scroll;
     
 }
 .dropdown_content div{

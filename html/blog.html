@@ -2,23 +2,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/blog.css">
+    <link id="theme" rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/blogresponsive.css">
     <script src="https://kit.fontawesome.com/006cb90729.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>posts</title>
+    <title>blog</title>
 </head>
 <body>
     <div class="navigationbar" id="nav">
         <ul>
-            <div class="navleft" id="navbot">
-                <li class="home"><a href="">home</a></li>
-                <li><a href="">cooperation request</a></li>
-                <li><a href="">work sampls</a></li>
+            <div class="navleft resp">
+                <li class="home"><a href=""><i class="fa-solid fa-house"></i> home </a></li>
+                <li><a href=""><i class="fa-solid fa-handshake"></i>  cooperation request</a></li>
+                <li><a href=""><i class="fa-solid fa-cubes"></i>  blog</a></li>
                                 
             </div>
             <div class="navright">
-                <li>
+                <li id="theme">
                     <div class="themebutton">
                         <div class="backgroundbutton">
                             <div>
@@ -37,16 +37,26 @@
                     <span id="search" class="material-symbols-outlined">search</span>
                     <input type="text" placeholder="search">
                 </li>
-                <li>
+                <li class="user" id="user">
+                    <img id="img" src="/photos/man.png" alt="">
                     <a href="/html/login.html"><button>login</button></a>
-                </li>
-                <li class="user">
-                    <img src="/photos/user.png" alt="">
-                    <p> faraz farrokhnia</p>
                 </li>
                 <li id="menubutton"><span  id="menu" class="material-symbols-outlined">menu</span></li>
             </div>
         </ul>
+
+</div>
+<div class="responsivenavigationbar" id="sidenavbar">
+    <ul>
+        <li class="user" id="responsiveuser">
+            <img id="img" src="/photos/man.png" alt="">
+            <a href="/html/login.html"><button>login</button></a>
+        </li>
+        <li class="links home"><a href=""><i class="fa-solid fa-house"></i> home </a></li>
+        <li class="links"><a href=""><i class="fa-solid fa-cubes"></i>  blog</a></li>
+        <li class="links"><a href=""><i class="fa-solid fa-handshake"></i>  cooperation request</a></li>
+        
+    </ul>
 
 </div>
     <div class="top">

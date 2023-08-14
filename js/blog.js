@@ -1,27 +1,38 @@
-let box = document.getElementById('box');
-let title = document.getElementById('title');
-let buttons = document.getElementById('buttons');
+
+let ball = document.getElementById('ball');
+let icon = document.getElementById('icon');
+const link = document.getElementById('theme');
+
 let menu = document.getElementById('menu');
-let nav = document.getElementById('navbar');
+let sidenav = document.getElementById('sidenavbar');
 
+ball.onclick = switchthem;
+menu.onclick = sidemenu;
 
-menu.onclick = dropdownmenu;
-
-function dropdownmenu()
+function switchthem()
 {
-    if(nav.style.top=="-44vh")
+    if(icon.className=="fa-solid fa-sun")
     {
-        
-        nav.style.top='0';
-        nav.style.zIndex='1';
-        nav.style.position='relative';
-
-
+        ball.style.left="75px";
+        icon.className="fa-solid fa-moon";
+        ball.style.animationName='ball';
+        link.href = "/css/blog.darkmode.css";
     }
     else{
-        nav.style.top='-44vh';
-        nav.style.zIndex='0';
-        nav.style.position='absolute';
-
+        ball.style.left = '3px';
+        ball.style.animationName = 'reverseball';
+        icon.className = "fa-solid fa-sun";
+        link.href = "/css/blog.css";
+    }
+}
+function sidemenu (){
+    if(sidenav.style.right=="0px")
+    {
+        sidenav.style.right='-350px';
+        sidenav.style.animationName='closesidemenu';
+    }
+    else{
+        sidenav.style.right='0px'
+        sidenav.style.animationName='opensidemenu';
     }
 }

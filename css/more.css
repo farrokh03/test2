@@ -4,6 +4,9 @@
     box-sizing: border-box;
     
 }
+body{
+    position: relative;
+}
 ::-webkit-scrollbar{
     width:10px;
 }
@@ -22,10 +25,11 @@
     width: 100%;
     height: 11vh;
     background-color: white;
+    
 }
 .navigationbar ul{
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,11 +37,12 @@
 }
 .navleft , .navright{
     width: 50%;
-    height: 10vh;
+    height: 11vh;
     display: flex;
 }
 .navleft li , .navright li{
     width: 33%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +53,7 @@
     font-family: sans-serif;
     color:#222;
     font-weight: 550;
-    padding:32px;
+    padding:25px;
     transition: border-bottom linear .15s;
     transition: ease-in;
     transition: .15s;
@@ -58,11 +63,14 @@
     border-bottom: 5px solid #76ffff;
 }
 #menubutton span{
-    font-size: 45px;
-    color:rgb(93, 93, 232)
+    font-size: 40px;
+    color:#222;
+    cursor: pointer;
     
 }
 #menubutton{
+    align-items: center;
+    justify-content:flex-start;
     display: none;
 }
 li input{
@@ -165,6 +173,88 @@ li button:hover{
     }
 }
 
+/*responsivenavbar*/
+
+.responsivenavigationbar{
+    position: absolute;
+    background-color:whitesmoke;
+    height:89vh;
+    right:-350px;
+    z-index: 20;
+    top:11vh;
+    width: 350px;
+    box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.46) inset;
+    position: fixed;
+    display: none;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    
+
+}
+.responsivenavigationbar ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+.responsivenavigationbar ul li{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsivenavigationbar ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color:#222;
+    transition: .15s;
+}
+.home{
+    background-color: #000000ae;
+}
+.responsivenavigationbar ul .links a:hover{
+    color:rgb(82, 243, 255);
+    border-bottom: 5px solid #76ffff;
+}
+#responsiveuser{
+    
+    height: 40%;
+    
+}
+#responsiveuser img{
+    width: 125px;
+    height: 125px;
+}
+#responsiveuser button{
+    padding: 10px 45px;
+    margin-top: 30px;
+}
+@keyframes opensidemenu{
+    from{
+        right:-300px;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes closesidemenu{
+    from{
+        right:0px;
+    }
+    to{
+        right:-350px;
+    }
+}
+
+
+
+
+/*responsivenavbar*/
 .container{
     width: 100vw;
     height: 80vh;
@@ -173,12 +263,11 @@ li button:hover{
     display: flex;
     position: relative;
     flex-direction: column;
-
 }
 .post{
-
-    width: 85%;
-    height: 70%;
+    
+    width: 80%;
+    height: 65%;
     background-color:white;
     border-radius: 5px;
     display: flex;
@@ -201,7 +290,7 @@ li button:hover{
 }
 .photo{
     height: 100%;
-    width: 35%;
+    width:35%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -301,22 +390,14 @@ footer{
     cursor: pointer;
     position: relative;
 }
-.user p{
-    font-family: sans-serif;
-    width: 200px;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
+
 .user img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
    
     margin-bottom: 8;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid   gray;
 }
 .slide-in-left {
 	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

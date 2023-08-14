@@ -11,14 +11,14 @@
 <body>
     <div class="navigationbar" id="nav">
         <ul>
-            <div class="navleft" id="navbot">
-                <li class="home"><a href="">home</a></li>
-                <li><a href="">cooperation request</a></li>
-                <li><a href="">blog</a></li>
+            <div class="navleft resp">
+                <li class="home"><a href=""><i class="fa-solid fa-house"></i> home </a></li>
+                <li><a href=""><i class="fa-solid fa-handshake"></i>  cooperation request</a></li>
+                <li><a href=""><i class="fa-solid fa-cubes"></i>  blog</a></li>
                                 
             </div>
             <div class="navright">
-                <li>
+                <li id="theme">
                     <div class="themebutton">
                         <div class="backgroundbutton">
                             <div>
@@ -37,7 +37,7 @@
                     <span id="search" class="material-symbols-outlined">search</span>
                     <input type="text" placeholder="search">
                 </li>
-                <li class="user">
+                <li class="user" id="user">
                     <img id="img" src="/photos/man.png" alt="">
                     <a href="/html/login.html"><button>login</button></a>
                 </li>
@@ -46,7 +46,20 @@
         </ul>
 
 </div>
-<img class="background" id="background" src="/photos/Jowhareh_galleries_poster_baa7ec19-3e2f-454d-8446-e707b3b993f0.jpeg" alt="">
+<div class="responsivenavigationbar" id="sidenavbar">
+    <ul>
+        <li class="user" id="responsiveuser">
+            <img id="img" src="/photos/man.png" alt="">
+            <a href="/html/login.html"><button>login</button></a>
+        </li>
+        <li class="links home"><a href=""><i class="fa-solid fa-house"></i> home </a></li>
+        <li class="links"><a href=""><i class="fa-solid fa-cubes"></i>  blog</a></li>
+        <li class="links"><a href=""><i class="fa-solid fa-handshake"></i>  cooperation request</a></li>
+        
+    </ul>
+
+</div>
+<img class="background" id="background" src="/photos/Jowhareh_galleries_6_poster_3b11a1a5-34ac-435d-83be-cc7e505e1aa5.jpeg" alt="">
 
 <div class="container">
     

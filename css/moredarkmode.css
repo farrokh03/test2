@@ -210,7 +210,7 @@ li button:hover{
     transition: .15s;
 }
 .home{
-    background-color:darkgray;
+    background-color:rgb(23, 23, 23);
 }
 .responsivenavigationbar ul .links a:hover{
     color:rgb(82, 243, 255);

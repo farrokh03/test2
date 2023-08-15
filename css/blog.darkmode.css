@@ -15,7 +15,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-   
+   background-color: #222;
 }
 .navigationbar{
     width: 100%;
@@ -257,9 +257,13 @@ li button:hover{
 
     width: 20%;
     height: 84vh;
-    background-color: #222222c4;
+    background-color: #2a2929;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.703);
     transition: 1s;
+}
+span{
+    color: gray;
+    cursor: pointer;
 }
 .navbar ul{
     display: flex;
@@ -268,7 +272,6 @@ li button:hover{
     width: 100%;
     height:100%;
     transition: .75s;
-    padding: 50px 0;
 }
 .navbar ul li{
     width: 100%;
@@ -290,7 +293,8 @@ ul > #blur:hover {
     color:gray;
     filter: blur(0px);
     text-shadow:none;
-    background-color: #2a2a2a;
+    letter-spacing: 5px;
+    background-color: #434040;
 }
 .dropdown{
     position: relative;
@@ -300,7 +304,7 @@ ul > #blur:hover {
 }
 
 .dropdown_content{
-    height: 700%;
+    height:200px;
     position: absolute;
     width: 100%;
     top:100%;
@@ -308,28 +312,42 @@ ul > #blur:hover {
     flex-wrap: wrap;
     flex-direction: column;
     display:none;
-    background-color: #22222283;
+    background-color: #2a2929;
     z-index: 20;
+    overflow-y: scroll;
     
 }
 .dropdown_content div{
     width: 100%;
-    height: 14.28%;
-    color:#f2f2f2;
+    height:25%;
+    color:rgba(255, 255, 255, 0.595);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .25s;
+    z-index: 20;
+}
+#show{
+    display:none;
+    position: fixed;
+    top: 11vh;
+    z-index:10;
+    background-color:#333232;
+    width: 100%;
+    justify-content: center;
+    height: 7vh;
+    color:white;
+    align-items: center;
 }
 .dropdown_content:hover > #dropblur{
     filter: blur(1.5px);
     
 }
 .dropdown_content > #dropblur:hover {
-    color:#222;
+    color:gray;
     filter: blur(0px);
     text-shadow:none;
-    background-color: #f2f2f2;
+    background-color:#434040;
 }
 .container{
     width: 80%;
@@ -350,7 +368,7 @@ ul > #blur:hover {
     background-color:#403e3e;
 }
 ::-webkit-scrollbar-track{
-    background-color: #fffefec8;
+    background-color: rgb(94, 94, 94);
 }
 ::-webkit-scrollbar-button{
     display: none;

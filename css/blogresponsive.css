@@ -16,7 +16,7 @@
     }
     .responsivenavigationbar{
         display:flex;
-        
+        z-index: 100;
         position:fixed;
     }
     .navigationbar{
@@ -38,21 +38,26 @@
         flex-direction: column;
     }
     .container{
-        margin-top: 0;
-        width: 95%;
+        margin-top: 14vh;
+        width: 100%;
+        height: 80vh;
     }
     .navbar{
         width: 100%;
         height: 35vh;
+        position:absolute;
+        top:7vh;
+        z-index: 5;
     }
+    
     .navbar ul{
         padding: 0;
     }
-    .dropdown_content{
-        background-color: rgb(98, 98, 98);
-    }
     .navbar ul li{
         height: 7vh;
+    }
+    #show{
+        display:flex;
     }
     
 }
